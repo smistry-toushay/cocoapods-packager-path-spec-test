@@ -7,6 +7,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
+
 Pod::Spec.new do |s|
   s.name             = "PathSpecTest"
   s.version          = "0.1.0"
@@ -17,12 +18,12 @@ Pod::Spec.new do |s|
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PathSpecTest"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/smistry-toushay/cocoapods-packager-path-spec-test"
   s.license          = 'MIT'
   s.author           = { "Sandeep Mistry" => "sandeep.mistry@toushay.com" }
-  s.source           = { :git => "https://github.com/smistry-toushay/cocoapods-packager-path-spec-test.git", :branch => "master" }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  #s.source           = { :git => "https://github.com/smistry-toushay/cocoapods-packager-path-spec-test.git", :branch => "master" }
+
+  s.source           = { :path => <PATH TO LOCAL GIT CLONE OF REPO> }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -31,8 +32,4 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'PathSpecTest' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
